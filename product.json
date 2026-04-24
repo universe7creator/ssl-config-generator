@@ -1,0 +1,20 @@
+{
+  "name": "SSL Config Generator",
+  "slug": "ssl-config-generator",
+  "tagline": "Generate secure SSL/TLS configurations",
+  "description": "Create production-ready SSL/TLS configurations for Nginx, Apache, and other servers. Includes security headers and cipher suite recommendations.",
+  "price": "19",
+  "features": [
+    "Nginx SSL config",
+    "Apache SSL config",
+    "Security headers generator",
+    "Cipher suite recommendations",
+    "HSTS configuration",
+    "SSL test integration"
+  ],
+  "tech_stack": "Vercel + Node.js",
+  "status": "spec_ready",
+  "category": "security_tools",
+  "spec_version": "1.0",
+  "checkout_url": null
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "ssl-config-generator",
+  "name": "SSL Config Generator Pro",
+  "tagline": "Generate secure SSL/TLS configurations for web servers",
+  "description": "Create optimized SSL/TLS configurations for Nginx, Apache, and other web servers. Follows Mozilla SSL guidelines, supports modern TLS versions, and ensures A+ SSL Labs ratings.",
+  "price": "$19",
+  "category": "Security Tools",
+  "tech_stack": ["Vercel", "Node.js"],
+  "features": [
+    "Nginx SSL configuration generator",
+    "Apache SSL configuration generator",
+    "Modern / Intermediate / Old compatibility modes",
+    "Certificate chain validator",
+    "HSTS header generator",
+    "OCSP stapling configuration",
+    "Cipher suite optimization",
+    "Security header recommendations"
+  ],
+  "use_cases": [
+    "Setting up HTTPS on new servers",
+    "SSL configuration hardening",
+    "Certificate migration projects",
+    "Security compliance audits"
+  ],
+  "target_audience": "System administrators, DevOps engineers, security professionals, web developers",
+  "seo_keywords": ["ssl config generator", "nginx ssl", "apache tls", "ssl certificate", "tls configuration"],
+  "demo": {
+    "server": "nginx",
+    "tls_version": "1.3",
+    "compatibility": "Modern",
+    "rating": "A+"
+  },
+  "status": "spec_ready",
+  "created_cycle": 1072,
+  "priority": "high"
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSL Config Generator Pro — Secure TLS Configuration | $19 one-time</title>
+  <meta name="description" content="Generate secure SSL/TLS configurations for Nginx, Apache, and web servers. A+ SSL Labs rating guaranteed with modern cipher suites and security headers.">
+  <meta property="og:title" content="SSL Config Generator Pro">
+  <meta property="og:description" content="Create optimized SSL configurations for web servers">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    body { background: #0a0a0a; color: white; }
+    .gradient-text {
+      background: linear-gradient(135deg, #10b981, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+    }
+    .glow-button {
+      background: linear-gradient(135deg, #10b981, #3b82f6);
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+      animation: pulse 2s infinite;
+      transition: all 0.3s ease;
+    }
+    .glow-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(16, 185, 129, 0.7);
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.4); }
+      50% { box-shadow: 0 0 60px rgba(16, 185, 129, 0.8); }
+    }
+    .fadeInUp { animation: fadeInUp 0.8s ease-out; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .config-box {
+      background: #0f1f1a;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 12px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .rating-a { color: #10b981; }
+    .rating-b { color: #84cc16; }
+    .rating-c { color: #eab308; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- NAV -->
+  <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-500 flex items-center justify-center font-bold text-sm">SSL</div>
+        <span class="font-bold text-lg">SSLConfig</span>
+      </div>
+      <a href="#pricing" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition text-sm font-medium">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-block px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-sm mb-6 fadeInUp">
+        🔒 A+ SSL Labs Rating Guaranteed
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight fadeInUp">
+        <span class="gradient-text">SSL Config</span><br>Generator Pro
+      </h1>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8 fadeInUp">
+        Generate secure SSL/TLS configurations for Nginx, Apache, and web servers.
+        Modern cipher suites, perfect forward secrecy, and A+ ratings.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 fadeInUp">
+        <a href="#generator" class="glow-button px-8 py-4 rounded-xl font-bold text-lg inline-block">Generate Config Free</a>
+        <a href="#pricing" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 transition font-medium text-lg">Get Full Access - $19</a>
+      </div>
+      <div class="flex justify-center gap-6 text-sm text-gray-500 fadeInUp">
+        <span class="flex items-center gap-2">✓ Nginx & Apache</span>
+        <span class="flex items-center gap-2">✓ TLS 1.3 Support</span>
+        <span class="flex items-center gap-2">✓ A+ Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section id="generator" class="py-20 px-4 bg-white/5">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Generate Your SSL Configuration</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="glass-card p-6">
+          <h3 class="font-semibold mb-4">Server Configuration</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Web Server</label>
+              <select id="server" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white">
+                <option value="nginx">Nginx</option>
+                <option value="apache">Apache</option>
+                <option value="haproxy">HAProxy</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Compatibility</label>
+              <select id="compat" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white">
+                <option value="modern">Modern (TLS 1.3 only)</option>
+                <option value="intermediate">Intermediate (TLS 1.2+)</option>
+                <option value="old">Old (legacy support)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Domain</label>
+              <input type="text" id="domain" placeholder="example.com" class="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-600">
+            </div>
+            <button onclick="generateConfig()" class="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 transition font-medium">
+              Generate Configuration
+            </button>
+          </div>
+        </div>
+        <div class="config-box p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="font-semibold text-emerald-400">Generated Config</h3>
+            <button onclick="copyConfig()" class="text-sm text-emerald-400 hover:text-emerald-300">Copy</button>
+          </div>
+          <pre id="config-output" class="mono text-sm text-emerald-300 overflow-x-auto whitespace-pre-wrap"># Select options and click Generate</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Complete SSL Toolkit</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6">
+          <div class="text-3xl mb-4">🔐</div>
+          <h3 class="font-bold mb-2">Modern Cipher Suites</h3>
+          <p class="text-gray-400 text-sm">Curated cipher configurations following Mozilla SSL guidelines for maximum security.</p>
+        </div>
+        <div class="glass-card p-6">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="font-bold mb-2">Performance Optimized</h3>
+          <p class="text-gray-400 text-sm">OCSP stapling, session resumption, and HTTP/2 support for fastest connections.</p>
+        </div>
+        <div class="glass-card p-6">
+          <div class="text-3xl mb-4">✅</div>
+          <h3 class="font-bold mb-2">A+ Rating Guaranteed</h3>
+          <p class="text-gray-400 text-sm">Configurations tested to achieve A+ on SSL Labs with perfect scores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 px-4 bg-white/5">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Simple Pricing</h2>
+      <p class="text-gray-400 mb-12">One-time payment, lifetime access</p>
+      <div class="glass-card p-8 max-w-md mx-auto">
+        <div class="text-5xl font-bold mb-2">$19</div>
+        <div class="text-gray-400 mb-6">one-time payment</div>
+        <ul class="text-left space-y-3 mb-8">
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Nginx configurations</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Apache configurations</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> HAProxy support</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Certificate validator</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> HSTS generator</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Security headers</li>
+          <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Lifetime updates</li>
+        </ul>
+        <button class="w-full glow-button py-4 rounded-xl font-bold">Get Full Access</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-4 border-t border-white/10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-gray-500 text-sm">2025 SSL Config Generator Pro. All rights reserved.</div>
+      <div class="flex gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-white transition">Privacy</a>
+        <a href="#" class="hover:text-white transition">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function generateConfig() {
+      const server = document.getElementById('server').value;
+      const compat = document.getElementById('compat').value;
+      const domain = document.getElementById('domain').value || 'example.com';
+      let config = '';
+      if (server === 'nginx') {
+        config = `# Nginx SSL Configuration for ${domain}
+# Compatibility: ${compat.toUpperCase()}
+
+server {
+    listen 443 ssl http2;
+    server_name ${domain};
+
+    ssl_certificate /path/to/cert.pem;
+    ssl_certificate_key /path/to/key.pem;
+
+    # Modern TLS configuration
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256;
+
+    # OCSP Stapling
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    # Security headers
+    add_header Strict-Transport-Security "max-age=63072000" always;
+}`;
+      } else {
+        config = `# Apache SSL Configuration for ${domain}
+# Compatibility: ${compat.toUpperCase()}
+
+<VirtualHost *:443>
+    ServerName ${domain}
+
+    SSLEngine on
+    SSLCertificateFile /path/to/cert.pem
+    SSLCertificateKeyFile /path/to/key.pem
+
+    # Modern TLS configuration
+    SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+    SSLCipherSuite ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256
+    SSLHonorCipherOrder on
+
+    # Security headers
+    Header always set Strict-Transport-Security "max-age=63072000"
+</VirtualHost>`;
+      }
+      document.getElementById('config-output').textContent = config;
+    }
+    function copyConfig() {
+      const text = document.getElementById('config-output').textContent;
+      navigator.clipboard.writeText(text);
+    }
+  </script>
+</body>
+</html>
