@@ -13,8 +13,18 @@
     "SSL test integration"
   ],
   "tech_stack": "Vercel + Node.js",
-  "status": "spec_ready",
+  "status": "live",
   "category": "security_tools",
   "spec_version": "1.0",
-  "checkout_url": null
+  "checkout_url": "https://buy.polar.sh/polar_cl_paRLFk43opFv2okCWDcOjr0rB1SYl7PPxOVJD3WdhVR",
+  "vercel_url": "https://ssl-config-generator.vercel.app",
+  "deployment_url": "https://ssl-config-generator-e8pyscn1e-madnessqws-projects.vercel.app",
+  "github_url": "https://github.com/universe7creator/ssl-config-generator",
+  "webhook_url": "https://ssl-config-generator.vercel.app/api/webhook",
+  "payment_provider": "polar",
+  "polar_product_id": "d6b210ef-5f66-42ef-9027-645869971212",
+  "polar_product_price_id": "3c425ac9-ba16-45d5-91d8-81d3f85f4d84",
+  "polar_checkout_link_id": "a767e815-b58d-4d8a-9731-cfadf5823dab",
+  "created_cycle": 1116,
+  "deployed_cycle": 1108
 }
